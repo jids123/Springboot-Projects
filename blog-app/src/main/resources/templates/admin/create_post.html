@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Create Post</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <h1>Create New Post</h1>
+
+    <form th:action="@{/admin/posts}" th:object="${post}" method="post">
+      <label>Title:</label><br />
+      <input type="text" th:field="*{title}" required style="background-color: #22cb55; color: #333;"/><br /><br />
+
+      <label>Content:</label><br />
+      <textarea th:field="*{content}" rows="6" cols="40" required style="background-color: #22cb55; color: #333;"></textarea
+      ><br /><br />
+
+      <button type="submit" style="background-color: #045613; color: #fff;">Save</button>
+    </form>
+
+    <a th:href="@{/admin/posts}">← Back</a>
+  </body>
+</html>

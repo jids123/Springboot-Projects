@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Admin - Posts</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <div th:replace="fragments/header :: header"></div>
+
+    <main>
+      <h1>Edit Post</h1>
+
+      <form
+        th:action="@{/admin/posts/{id}(id=${post.id})}"
+        th:object="${post}"
+        method="post"
+      >
+        <label>Title:</label><br />
+        <input type="text" th:field="*{title}" required /><br /><br />
+
+        <label>Content:</label><br />
+        <textarea th:field="*{content}" rows="6" cols="40" required></textarea
+        ><br /><br />
+
+        <button type="submit">Update</button>
+      </form>
+
+      <a th:href="@{/admin/posts}">← Back</a>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+  </body>
+</html>

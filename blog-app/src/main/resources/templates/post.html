@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title th:text="${post.title}">Post</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <!-- Header fragment -->
+    <div th:replace="fragments/header :: header"></div>
+
+    <main>
+      <article>
+        <h1 th:text="${post.title}"></h1>
+        <p th:text="${post.content}"></p>
+      </article>
+    </main>
+
+    <!-- Footer fragment -->
+    <div th:replace="fragments/footer :: footer"></div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+package com.djamware.blog.blog_app.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.djamware.blog.blog_app.model.Comment;
+
+public interface CommentRepository extends JpaRepository<Comment, Long> {
+}
