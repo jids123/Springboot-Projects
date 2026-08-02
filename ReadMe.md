@@ -1,3 +1,6 @@
+HOW TO USE:
+Download Repository -> Open on Visual Studio Code -> Download Springboot Dashboard on its extensions tab -> Go to the Springboot Dashboard panel -> Open the project -> Profit
+
 Through the years, I've been building up my programming experience, making projects here and there, getting more into Python and Different Game Engines.
 This project brings me back to recreating one of the past things I've learned in college, which is Springboot web applications.
 I followed a djramware tutorial on how to create a Blog Web Application with CRUD functionality.
