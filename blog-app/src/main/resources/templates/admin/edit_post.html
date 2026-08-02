@@ -16,13 +16,13 @@
         method="post"
       >
         <label>Title:</label><br />
-        <input type="text" th:field="*{title}" required /><br /><br />
+        <input type="text" th:field="*{title}" required style="background-color: #22cb55; color: #333;"/><br /><br />
 
         <label>Content:</label><br />
-        <textarea th:field="*{content}" rows="6" cols="40" required></textarea
+        <textarea th:field="*{content}" rows="6" cols="40" required style="background-color: #22cb55; color: #333;"></textarea
         ><br /><br />
 
-        <button type="submit">Update</button>
+        <button type="submit" style="background-color: #045613; color: #fff;">Update</button>
       </form>
 
       <a th:href="@{/admin/posts}">← Back</a>
